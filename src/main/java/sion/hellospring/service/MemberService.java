@@ -1,5 +1,6 @@
 package sion.hellospring.service;
 
+import org.springframework.stereotype.Service;
 import sion.hellospring.domain.Member;
 import sion.hellospring.repository.MemberRepository;
 import sion.hellospring.repository.MemoryMemberRepository;
@@ -7,6 +8,7 @@ import sion.hellospring.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;

@@ -1,9 +1,11 @@
 package sion.hellospring.repository;
 
+import org.springframework.stereotype.Repository;
 import sion.hellospring.domain.Member;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements  MemberRepository{
 
     // 공유되는 변수이므로 공유문제가 발생하므로, 실제론 ConcurrentHashMap, AtomicLong 사용해야 한다.
